@@ -9,4 +9,5 @@
 @endforeach
 </ul>
 @include('layouts.footer')
+{{phpinfo()}}
 
