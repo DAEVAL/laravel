@@ -29,6 +29,14 @@ Route::get('/home',function(){
 /**
  * URL 파라미터 참조
  */
+/*
 Route::get('/{param}',function($param="test"){
     return $param;
 });
+*/
+
+/**
+ * Controller
+ */
+Route::get('/', 'WelcomeController@index');
+Route::resource('articles', 'ArticlesController');
